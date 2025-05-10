@@ -1,0 +1,1019 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #69F7BE;
+  --color-text-main: #000000;
+  --color-text-header: #2800FF;
+  --color-primary: #FFFF00;
+  --color-lolPink:    #f499b1;
+  --color-lolOrange:  #f19a6a;
+  --color-lolYellow:  #f4b762;
+  --color-lolGreen:   #9fd4be;
+  --color-lolLightBlue:    #adbde1;
+  --color-lolNavy:    #242c59;
+  --wrapper-height: 87vh;
+  --image-margin: 3rem;
+  --font-family: "Poppins";
+  --font-family-header: "Poppins";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CraftingLesson';
+  src: url('https://cdn.glitch.global/c70cb6b5-c9da-4a89-99d4-fa316815a9cb/CraftingLesson-2OnB8.otf?v=1746833818585') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+/* General styles for the body */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ---------------------------------------------- HOMEPAGE HEADER CODE ------------------------------------------------ */
+ .header-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 600px;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.1; /* 👈 reduce this number to bring lines closer */
+  margin-bottom: 0rem; /* reduce space below the image */
+}
+
+
+.cropped-wrapper {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  margin-bottom: 0rem;
+  }
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+.header-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+  transform: translateY(-200px);
+}
+
+.header-text {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+  margin-bottom: 0rem;
+}
+
+.top-text {
+  font-size: 100px;
+  font-weight: 900;
+  color: white;
+}
+
+.sliding-text {
+  font-size: 100px;
+  font-weight: 900;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: none;
+}
+
+.sliding-text.animate {
+  animation: slideIn 0.6s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(75px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.bottom-text {
+  font-size: 32px;
+  font-style: italic;
+  margin-top: 10px;
+  color: white;
+}
+
+
+/* ----------------- mobile friendly updates ------------------- */
+@media (max-width: 768px) {
+  .header-container {
+    height: auto;                  /* let image dictate height */
+  }
+  .header-bg {
+    transform: translateY(0);      /* reset desktop translation */
+  }
+  .header-text .top-text,
+  .header-text .sliding-text {
+    font-size: 2.5rem;             /* legible on phones */
+  }
+  .bottom-text {
+    font-size: 1.25rem;
+  }
+}
+
+
+/* ---------------------------------------------- NAVBAR CODE ------------------------------------------------ */
+
+/* Navbar container */
+.navbar {
+  position: sticky; /* Make the navbar stick to the top */
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Spread items across the navbar */
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000; /* Ensure it stays on top of other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for better visibility */
+  background: white; /* Remove background color */
+}
+
+/* Logo icon styling */
+.logo a {
+  text-decoration: none;
+}
+
+.logo-icon {
+  height: 40px; /* Adjust the size of your logo */
+  width: auto;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+/* Navigation links */
+.nav-links a {
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  font-weight: 400; /* Regular font weight for links */
+  
+}
+
+.nav-links a:hover {
+  /*background-color: #444444;*/
+  border-radius: 4px;
+  color: var(--color-lolPink);
+  font-weight: bold;
+}
+
+/* Mobile responsive: Hide the nav links and show hamburger */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  /* Remove hamburger menu */
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+
+  .divider {
+    padding: 0 1rem;
+  }
+
+/* Hide hamburger everywhere by default */
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+/* Show hamburger on mobile */
+.hamburger {
+  display: block;
+  position: absolute;      /* place it on top of nav */
+  top: 1rem;
+  right: 1rem;
+  z-index: 1001;           /* above the nav */
+
+    /* Bigger & bolder */
+    font-size: 1.5rem;              /* increase the ☰ icon size */
+    line-height: 1;               /* keep it tight */
+    padding: 0.5rem;              /* larger tap target */
+    
+    /* Gray instead of blue */
+    color: #666666;                  /* dark gray for the icon */
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+
+/* ---------------------------------------------- TWO-COLUMN LAYOUT CODE ------------------------------------------------ */
+
+.two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0rem;
+  padding: 0rem 3.5rem 0rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hdrcolumn {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0rem 0rem 1rem 2rem;
+  gap: 0rem; /* reduce vertical space between header and paragraph */
+  align-items: flex-start;
+  justify-content: left;
+}
+
+.hdrcolumn .hdr {
+  margin-bottom: 0rem; /* tighter spacing under header */
+  font-size: 1.8rem;
+}
+
+.hdrcolumn p {
+  margin-bottom: 0rem; /* adjust to taste */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: black;
+}
+
+
+.column {
+  flex: 1 1 500px;
+  max-width: 600px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.column h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.camp-details, .activities {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* ---------- mobile friendly additions --------------- */
+/* ───── MOBILE: Unified Vertical Rhythm ───── */
+@media (max-width: 768px) {
+  /* Target all your main “rows” on the home page */
+  section.two-column,
+  .theme-carousel-section,
+  .button-container{
+    margin: 1rem 0 !important;    /* same gap above & below */
+    padding: 0 1rem !important;   /* flush side padding */
+  }
+
+  /* Tighter carousel padding */
+  .theme-carousel-section {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  /* Stack the two-column children more snugly */
+  section.two-column > * {
+    margin-bottom: 1rem !important; 
+  }
+  section.two-column > *:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+
+
+
+
+/* ---------------------------------------------- BUTTONS CODE ------------------------------------------------ */
+
+.button-group {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.button-container {
+  margin-top: 2rem;
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  min-width: 200px;
+  text-align: center;
+
+}
+
+.button.pink {
+  background-color: var(--color-lolPink); /* pink */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button.pink.small {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-lolPink); /* pink */
+  color: white;
+  text-decoration: none;
+}
+.button.white.small {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  background-color: #ffffff; /* pink */
+  color: var(--color-lolPink);
+  text-decoration: none;
+}
+
+.button.pink:hover {
+  background-color: #db8daa;
+}
+
+.button.orange {
+  background-color: var(--color-lolOrange); /* orange */
+  color: white;
+}
+
+.button.orange:hover {
+  background-color: #e68952;
+}
+
+.button.yellow {
+  background-color: var(--color-lolYellow); /* Golden yellow */
+  color: white;
+}
+
+.button.yellow:hover {
+  background-color: #d8a761;
+}
+
+.button.green {
+  background-color: var(--color-lolGreen);
+  color: white;
+}
+
+.button.green:hover {
+  background-color: #8dc8b0;
+}
+
+.button.light.blue {
+  background-color: var(--color-lolLightBlue);
+  color: white;
+}
+
+.button.light.blue:hover {
+  background-color: #9db0d8;
+}
+
+.button.navy {
+  background-color: var(--color-lolNavy);
+  color: white;
+}
+
+.button.navy:hover {
+  background-color: #0f1432;
+}
+
+/* ------------- about page button update ----------------- */
+.about-camp .button-container {
+  justify-content: flex-start;
+}
+
+/* ----------- mobile friendly updates ------------- */
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .button {
+    min-width: auto;
+    width: 100%;                   /* full‑width tappable targets */
+  }
+}
+
+
+
+
+/* ---------------------------------------------- COUNTDOWN CODE ------------------------------------------------ */
+
+
+.countdown-wrapper {
+  text-align: center;
+  margin-top: 3rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.countdown-big {
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--color-lolNavy);
+  line-height: 1;
+}
+
+.countdown-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  color: black;
+  transition: opacity 0.3s ease;
+  min-height: 2em; /* prevents layout shift */
+}
+
+.countdown-emojis {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+/* ---------------------------------------------- POLICIES PAGE CODE ------------------------------------------------ */
+
+.registrationHeader,
+.paymentHeader,
+.dropoffHeader,
+.foodHeader,
+.photoAndSMHeader {
+  font-family: 'Poppins', sans-serif;
+  font-size: 45;
+  color: var(--color-lolNavy);
+  font-weight: 900;
+}
+
+.registrationHeader { color: var(--color-lolNavy); }
+.paymentHeader     { color: var(--color-lolGreen); }
+.dropoffHeader     { color: var(--color-lolYellow); }
+.foodHeader        { color: var(--color-lolOrange); }
+.photoAndSMHeader { color: var(--color-lolPink); }
+
+
+.text-base a {
+  color: var(--color-lolNavy);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.policy-content p {
+  line-height: 1.4; /* tighter line spacing inside paragraphs */
+  margin-bottom: 0.75rem; /* small space between lines of text */
+}
+
+.policy-content h1 {
+  margin-top: 3rem; /* keeps bigger gap before each new section */
+  margin-bottom: 1rem;
+}
+
+
+.policy-content {
+  margin-left: 3.5rem;
+}
+
+/* in your main CSS file */
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ----------------- mobile friendly updates ------------------- */
+
+/* ── POLICIES PAGE MOBILE FIX ── */
+@media (max-width: 768px) {
+  /* Make sure the outer container never overflows */
+  .policy-page .container {
+    padding: 0 1rem;          /* reduce side padding */
+    max-width: 100%;          /* stretch full width */
+  }
+
+  /* Remove the forced left margin on the content */
+  .policy-page .policy-content {
+    margin-left: 0;           /* slide back to flush */
+  }
+
+  /* Optional: add some breathing room on the right too */
+  .policy-page .policy-content > * {
+    margin-right: 1rem;
+  }
+}
+
+
+/* ---------------------------------------------- HEADERS CODE ------------------------------------------------ */
+
+.header-image img {
+  display: block;        /* remove inline‑img whitespace */
+  max-height: 150px;  /* cap at 150px tall */
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: 0rem auto 0rem auto; /* 32px above, 24px below */
+  text-align: center;
+}
+
+.AboutHeader {
+  font-family: 'CraftingLesson', sans-serif;
+  font-size: 50;
+  font-weight: normal;
+}
+.aboutSubHdr {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24;
+  font-weight: bold;
+}
+.hdr {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.centeredhdr {
+  text-align: center;
+}
+
+/* ---------------------------------------------- THEME CAROUSEL CODE ------------------------------------------------ */
+
+.theme-carousel-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding: 1rem 0;
+  scrollbar-width: none; /* Firefox */
+}
+.carousel-track::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.theme-card {
+  flex: 0 0 auto;
+  background-color: #fef6f8;
+  color: black;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  min-width: 160px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 1rem;
+  color: var(--color-lolPink);
+  transition: transform 0.2s;
+}
+.carousel-btn:hover {
+  transform: scale(1.2);
+}
+
+/* ---------------------------------------------- FOOTER CODE ------------------------------------------------ */
+
+.site-footer {
+  background-color: #fef6f8;
+  color: #555;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  border-top: 3px solid var(--color-lolPink);
+  margin-top: 3rem;
+}
+
+.footer-content p {
+  margin: 0.25rem 0;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+
+
+/* ---------------------------------------------- SCHEDULE TABLE CODE ------------------------------------------------ */
+.themes-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+
+.themes-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+.themes-table th,
+.themes-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.themes-table th {
+  background-color: #fef6f8; /* soft pink header */
+  font-weight: 600;
+}
+
+
+.themes-table td:first-child {
+  font-weight: 600;
+  width: 40%;
+}
+
+/* ---------------------------------------------- MODAL POP UP CODE ------------------------------------------------ */
+
+/* ====== RESET MODAL CSS (overwrite in style.css) ====== */
+/* full‑screen backdrop */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;               /* hidden by default */
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+/* show when active */
+.modal.active {
+  display: flex;
+}
+
+/* the white dialog box */
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 70%;
+  width: 90%;
+  
+  /* leave a little breathing room top + bottom */
+  max-height: calc(100vh - 8rem);
+  overflow-y: auto;
+  /* ensure padding stays visible when scrolling */
+  padding: 1.5rem;
+  
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+
+/* close button “×” */
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: black;
+}
+
+.modalHdr {
+  font-size: 1.75rem;      /* bigger text */
+  font-weight: 700;        /* extra bold */
+  margin-bottom: 1rem;     /* space under */
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* === Modal‑Content Backgrounds by Section === */
+
+/* Registration (pink) */
+#modal-registration .modal-content {
+  background-color: var(--color-lolPink);
+  color: white; /* adjust text color if needed */
+}
+
+/* Payment (orange) */
+#modal-payment .modal-content {
+  background-color: var(--color-lolOrange);
+  color: white;
+}
+
+/* Photos (green) */
+#modal-photos .modal-content {
+  background-color: var(--color-lolGreen);
+  color: white; /* white text may read better on dark green */
+}
+
+/* What to Bring (blue) */
+#modal-whatToBring .modal-content {
+  background-color: var(--color-lolLightBlue);
+  color: white;
+}
+
+.venmoQR {
+  max-width: 300px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ―― Payment Modal: Side‑by‑Side then Stack on Mobile ―― */
+#modal-payment .payment-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap; /* allows items to wrap when too tight */
+}
+
+#modal-payment .payment-qr {
+     /* fixed base width for QR */
+  max-width: 100%;   /* never overflow container */
+  max-height: 300px;
+  height: auto;
+  width: auto;
+}
+
+#modal-payment .payment-text {
+  flex: 1 1 200px;   /* take remaining space, but shrink no smaller than 200px */
+  color: inherit;    /* keeps modal’s text color */
+  line-height: 1.5;
+}
+
+/* Stack vertically on small screens */
+@media (max-width: 600px) {
+  #modal-payment .payment-flex {
+    flex-direction: column;
+    align-items: center;  /* center QR & text */
+    text-align: center;
+  }
+
+  #modal-payment .payment-text {
+    margin-top: 1rem;
+  }
+}
+
+
+/* -------------------------------------- ABOUT TEAM SECTION CODE ------------------------------- */
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.team-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 9999px;
+  border: 4px solid var(--color-lolPink);
+}
+
+.team-photo.lily {
+  border: 4px solid var(--color-lolPink);
+}
+
+.team-photo.lucy {
+  border: 4px solid var(--color-lolOrange);
+}
+
+.team-photo.viv {
+  border: 4px solid var(--color-lolYellow);
+}
+
+.team-photo.flower {
+  border: 4px solid var(--color-lolGreen);
+}
+
+
+

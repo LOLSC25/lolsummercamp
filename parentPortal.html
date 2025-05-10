@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/c70cb6b5-c9da-4a89-99d4-fa316815a9cb/flowerIcon.png?v=1743880147784"
+    />
+
+    <title>LOL - Parent Portal</title>
+    <!-- Website title that appears in tab -->
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    
+    </style>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="script.js" defer></script>
+  </head>
+  <!-- End head section -->
+
+  <body>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="https://cdn.glitch.global/c70cb6b5-c9da-4a89-99d4-fa316815a9cb/lolSummerCampLogoFlower.png?v=1743884869446"
+                alt="LOL Summer Camp Logo"
+                class="logo-icon"
+            /></a>
+          </div>
+          
+          <button class="hamburger" aria-label="Menu">☰</button>
+
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="parentPortal.html">Parent Portal</a></li>
+            <li><a href="policies.html">Policies + Info</a></li>
+          </ul>
+        </nav>
+
+          <header class="header-image">
+            <img src="https://cdn.glitch.global/c70cb6b5-c9da-4a89-99d4-fa316815a9cb/headerParentPortal.png?v=1746913180077" alt="LOL Summer Camp Policies"/>
+          </header>
+        
+        <h2 class="centeredhdr">The one-stop shop for everything you'll need this summer! ☀️</h2>
+        
+        <div class="button-container">
+          <a href="#" class="button pink portal-btn" data-modal-target="#modal-registration">📝<br/>Registration</a>
+          <a href="#" class="button orange portal-btn" data-modal-target="#modal-payment">💳<br/>Payment</a>
+          <a href="https://understood-momentous-feet.glitch.me/schedules.html" class="button yellow">📆<br/>Daily &amp; Weekly Schedules</a>
+          
+        </div>
+        
+        <div class="button-container">
+          <a href="#" class="button green portal-btn" data-modal-target="#modal-photos">📸<br/>Photos</a>
+          <a href="#" class="button light blue portal-btn" data-modal-target="#modal-whatToBring">🎒<br/>What to Bring</a>
+          <a href="https://understood-momentous-feet.glitch.me/policies.html" class="button navy">📋<br/>Policies</a>
+        </div>
+      </div>
+      <!-- end content section -->
+    </div>
+    <!-- end wrapper section -->
+    
+            <!-- Registration Modal -->
+        <div class="modal" id="modal-registration">
+          <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class = "modalHdr">Registration</h2>
+            <div class="button-container">
+              <a href="https://docs.google.com/spreadsheets/d/1TXbSDHz0czPA3WBSqw2EBiyKrBBHRcNqI86UEexDg8U/edit?usp=sharing" class="button white small">Update Registration Dates for Your Kiddo Here</a>
+            </div>
+            <p>
+              <strong>Registration closes at 1:00 PM (close of camp) on the Friday before the upcoming week of camp</strong> and will be locked at that time. 
+              If changes need to be made, please contact Lily to do so.
+            </p>
+            <p>Want to start the registration process? Please start by filling out our <a href = "https://forms.gle/LpkhckrXVKThFyH18">interest form.</a></p>
+          </div>
+        </div>
+
+        <!-- Payment Modal -->
+        <div class="modal" id="modal-payment">
+          <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class = "modalHdr">Payment</h2>
+            
+            <div class="payment-flex">
+              <!-- Venmo QR Code -->
+              <img src="https://cdn.glitch.global/c70cb6b5-c9da-4a89-99d4-fa316815a9cb/venmo.png?v=1746903471682" alt="venmo qr code" class="payment-qr"/>
+
+              <!-- Payment instructions -->
+              <div class="payment-text">
+                <p>Pricing: <strong>$30 a day</strong> or <strong>$135 for a full week</strong> (all 5 days).</p>
+                <p>We currently accept cash, check, or venmo.</p>
+                <p><strong>Payment is due the Friday before the upcoming week at 1:00PM (close of camp).</strong> 
+                  Failure to pay on time will result in your registration for that week being cancelled and you may be 
+                  turned away at the door if you have not paid.</p>
+              </div>
+            </div>
+            
+          
+        </div>
+      </div>
+            
+            <!--<img src="https://cdn.glitch.global/c70cb6b5-c9da-4a89-99d4-fa316815a9cb/venmo.png?v=1746903471682" alt="venmo qr code"/>-->
+
+
+        <!-- Photos Modal -->
+        <div class="modal" id="modal-photos">
+          <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class = "modalHdr">Photos</h2>
+            <p>This summer we will be sharing all the great photos we take through the LOL group chat and the 
+              <a href="https://apps.apple.com/us/app/familyalbum-photo-sharing/id935672069">FamilyAlbum App</a>.
+              To view the photos in this app and see all the fun, please download the app and ask Lily for a unique link to join our "family"!
+              We will also be using photos for future marketing such as this website.</p>
+          </div>
+        </div>
+
+        <!-- What to Bring Modal -->
+        <div class="modal" id="modal-whatToBring">
+          <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class = "modalHdr">What to Bring</h2>
+            <ul class="what-to-bring-list">
+              <li>💧 Water Bottle</li>
+              <li>🍎 Nut‑Free Snack</li>
+              <li>🥪 Nut‑Free Lunch</li>
+              <li>👕 Change of Clothes</li>
+              <li>👟 Clothes &amp; Shoes to Play In</li>
+              <li>🍼 Diapers, Wipes, or Pull‑Ups (if needed)</li>
+            </ul>
+          </div>
+        </div>
+
+    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
+      
+<footer class="site-footer">
+          <div class="footer-content">
+            <p>© 2025 LOL Summer Camp • Sterling, VA</p>
+            <p>Made with 💛 by the LOL Team</p>
+          </div>
+        </footer>
+  </body>
+</html>
