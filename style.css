@@ -1036,6 +1036,11 @@ body, html {
     height: 150px;
     margin-bottom: 0.5rem;
   }
+
+  .team-info {
+  /* don't push text away from whatever sits to its right */
+  margin-right: 0rem;   /* ← adjust this value to taste */
+  }
 }
 
 
