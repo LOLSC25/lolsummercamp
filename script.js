@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const big = document.getElementById('countdownBig');
   const message = document.getElementById('countdownMessage');
   if (big && message) {
-    const campStartDate = new Date('2025-06-16T09:00:00');
+    const campStartDate = new Date('2026-06-22T09:00:00');
     const today = new Date();
     const diffDays = Math.ceil((campStartDate - today) / (1000 * 60 * 60 * 24));
     big.textContent = diffDays;
