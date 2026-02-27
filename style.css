@@ -149,6 +149,11 @@ to this section's matching END comment to see page-specific styles.
   font-style: italic;
 }
 
+strong,
+b {
+  letter-spacing: 0.02em;
+}
+
 @font-face {
   font-family: 'CraftingLesson';
   src: url('https://cdn.glitch.global/c70cb6b5-c9da-4a89-99d4-fa316815a9cb/CraftingLesson-2OnB8.otf?v=1746833818585') format('opentype');
