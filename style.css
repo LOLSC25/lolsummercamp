@@ -151,7 +151,7 @@ to this section's matching END comment to see page-specific styles.
 
 strong,
 b {
-  letter-spacing: 0.2em;
+  letter-spacing: 0.04em;
 }
 
 @font-face {
