@@ -641,6 +641,7 @@ body {
 .paymentHeader,
 .dropoffHeader,
 .foodHeader,
+.whatToBringHeader,
 .photoAndSMHeader {
   font-family: 'Poppins', sans-serif;
   font-size: 45;
