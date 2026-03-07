@@ -1056,11 +1056,21 @@ body, html {
 }
 
 /*-------------------------------------- 404 Pg --------------------------------------------------------------*/
-.errorPg {
+.error-message {
   text-align: center;
-  padding: 1.5rem 1rem;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 3rem;
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+.error-message a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #f19a6a; /* your LOL orange */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
 }
 
 
