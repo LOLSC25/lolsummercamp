@@ -261,7 +261,7 @@ body {
   display: inline-block;
   margin-top: 20px;
   padding: 14px 24px;
-  background: var(--color-lolOrange));
+  background: var(--color-lolOrange);
   color: #ffffff;
   text-decoration: none;
   border-radius: 10px;
