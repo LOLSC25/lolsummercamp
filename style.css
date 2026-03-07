@@ -257,6 +257,25 @@ body {
   color: white;
 }
 
+.hero-register {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 24px;
+  background-color: #f19a6a;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-register:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.16);
+}
+
 
 /* ----------------- mobile friendly updates ------------------- */
 @media (max-width: 768px) {
