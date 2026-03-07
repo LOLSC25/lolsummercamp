@@ -16,7 +16,7 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #69F7BE;
+  --color-bg: #FAF8F6;
   --color-text-main: #000000;
   --color-text-header: #2800FF;
   --color-primary: #FFFF00;
@@ -168,6 +168,7 @@ b {
 /* General styles for the body */
 body {
   font-family: 'Poppins', sans-serif;
+  color: #2C2C2C;
 }
 
 /* ---------------------------------------------- HOMEPAGE HEADER CODE ------------------------------------------------ */
