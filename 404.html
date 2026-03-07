@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,7 +10,7 @@
       href="images/flowerIcon.png"
     />
 
-    <title>Oops! Page Not Found!</title>
+    <title>Oops! Page Not Found</title>
     <!-- Website title that appears in tab -->
 
     <style>
@@ -20,12 +20,38 @@
 
     <!-- The website stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    
-</head>
 
-<body>
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <!-- End head section -->
 
-<div class = "errorPg">
+  <body>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="images/lolSummerCampLogoFlower.png"
+                alt="LOL Summer Camp Logo"
+                class="logo-icon"
+            /></a>
+          </div>
+          
+          <button class="hamburger" aria-label="Menu">☰</button>
+
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="parentPortal.html">Parent Portal</a></li>
+            <li><a href="policies.html">Policies + Info</a></li>
+          </ul>
+        </nav>
+
+        
+
+
   <h1>Uh-oh! 🐶</h1>
   
   <p>Looks like this page ran off to play with Flower and Leroy.</p>
@@ -33,10 +59,13 @@
   <p>Let's get you back to camp!</p>
   
   <a href="/">Return to LOL Summer Camp</a>
-</div>
-</body>
 
-  <!-- The footer holds our remix button — you can keep or delete it ✂ -->
+
+      <!-- end content section -->
+    </div>
+    <!-- end wrapper section -->
+
+    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
     <footer class="site-footer">
       <div class="footer-content">
         <p>© 2026 LOL Summer Camp • Sterling, VA</p>
@@ -44,4 +73,6 @@
         <p>LOL Summer Camp operates as a religious cooperative and incorporates faith-based values into its community.</p>
       </div>
     </footer>
+
+  </body>
 </html>
