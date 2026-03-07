@@ -1055,5 +1055,13 @@ body, html {
   }
 }
 
+/*-------------------------------------- 404 Pg --------------------------------------------------------------*/
+.errorPg {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 3rem;
+}
+
 
 
