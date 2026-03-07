@@ -31,6 +31,9 @@ to this section's matching END comment to see page-specific styles.
   --font-family: "Poppins";
   --font-family-header: "Poppins";
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Basic page style resets */
 * {
